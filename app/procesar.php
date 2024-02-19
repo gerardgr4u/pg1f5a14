@@ -1,6 +1,9 @@
 <?php
 // Verificar si se han enviado datos mediante el método POST
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    // Obtener un identificador único para la cookie
+    $cookieIdentifier = uniqid("apuesta_", true);
+
     // Obtener los datos del formulario
     $resultat = $_POST["resultat"];
     $resultatDetallat = isset($_POST["resultat_detallat"]) ? $_POST["resultat_detallat"] : "No proporcionat";
@@ -18,8 +21,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $datosAposta .= "Equip Visitant: $equipVisitant\n";
     $datosAposta .= "-----------------------------\n";
 
-    // Guardar los datos en una cookie (aquí la cookie expirará en 1 hora)
-    setcookie("datos_apuesta", $datosAposta, time() + 3600, "/");
+    // Guardar los datos en una cookie con un nombre único
+    setcookie("datos_apuesta_$cookieIdentifier", $datosAposta, time() + 3600, "/");
 
     // Mostrar mensaje de éxito
     echo "<p>Dades guardades correctament en cookies.</p>";
@@ -37,5 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </head>
 <body>
     <h1>Dades rebudes des del formulari d'aposta</h1>
+
+    <a href="index1.php">Volver a la página principal</a>
 </body>
 </html>

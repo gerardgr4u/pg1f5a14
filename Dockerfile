@@ -7,5 +7,4 @@ WORKDIR /usr/local/bin/phpunit9
 RUN composer require --dev phpunit/phpunit:^9
 RUN ln -s /usr/local/bin/phpunit9/vendor/bin/phpunit /usr/local/bin/phpunit
 WORKDIR /var/www/html
-
-
+COPY . /var/www/html/
