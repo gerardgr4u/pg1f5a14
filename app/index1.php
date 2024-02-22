@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Predicció Premier League 1.22</title>
+    <title>Predicció Premier League</title>
 </head>
 <body>
-    <h1>Partits de la pròxima jornada</h1>
+    <h1>Partits de la pròxima jornada 1.23</h1>
 
     <?php
     // Nombres de los equipos
