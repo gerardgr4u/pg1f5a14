@@ -6,7 +6,7 @@
     <title>Predicció Premier League</title>
 </head>
 <body>
-    <h1>Partits de la pròxima jornada 1.26</h1>
+    <h1>Partits de la pròxima jornada 1.27</h1>
 
     <?php
     // Nombres de los equipos
