@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Predicció Premier League 1.10</title>
+    <title>Predicció Premier League 1.11</title>
 </head>
 <body>
     <h1>Partits de la pròxima jornada</h1>
